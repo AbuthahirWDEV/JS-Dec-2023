@@ -74,3 +74,21 @@ function printPrimesUpToN(n) {
         }
 }
 printPrimesUpToN(number);
+
+
+function calc(num1 , op , num2){
+    if (op === '+') {
+        return num1 + num2;
+    } else if (op === '-') {
+        return num1 - num2;
+    } else if (op === '*') {
+        return num1 * num2;
+    } else if (op === '/') {
+        return num1 / num2;
+    } else {
+        console.error("Invalid operator");
+        return null;
+    }
+}
+let result = calc(4,"*",2)
+console.log(result)
